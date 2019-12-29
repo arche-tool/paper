@@ -8,6 +8,8 @@ textbf1_Introduction.html
 longtable_lcc_toprule_Orientat.html
 Identification_of_th.html
 textbf2_Reconstructi.html
+figures/optimized_OR_dist
+940ie5skqo8.html
 figures/image1
 Figure_1_Distributio.html
 figures/image2
