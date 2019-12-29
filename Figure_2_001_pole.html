@@ -1,0 +1,25 @@
+<div>Figure 2. (001) pole figure of the commonly cited ORs (cf. Table 1) and
+the orientation relationships optimized based on the GBs and average
+orientations. The black dots in the right-hand side image are the
+experimental data representing the misorientation across the inter-phase
+boundaries.</div><div>To Edgar! The optimized-GB and -ave have been plotted based on some
+axis/angle pairs which I got from the reconstruction software for the
+Fe-30Ni sample (perhaps they are wrong). You can give me more accurate
+values then I will regenerate these images. What I need is the
+axis/angle pairs for Optimized-GB and Optimized-ave.</div><div>2.2 Parent phase reconstruction</div><div>A new method, equally based on grain boundary misorientations, is
+proposed for the parent phase reconstruction. The key concept of this
+method is the use of a graph clustering algorithm to find groups of
+closely related grains that originate from a single parent grain. The
+Markov Clustering algorithm [28,29] is used because of the following
+features:</div><ul><li>It is based on the probabilities of random walks through the graph.</li><li>It identifies natural cuts and clusters in the graph without the need
+to specify threshold values of allowable angular deviations or the
+necessity to specify a predefined number of clusters</li><li>There is only one parameter that controls the cluster coarsening.</li><li>Excellent noise tolerance.</li><li>Fast calculation time.</li></ul><div>In order to use the clustering algorithm, a graph has to be derived from
+the OIM in the following way: (a) each grain, product or parent, becomes
+a node in the graph, (b) each grain boundary becomes an edge connecting
+two neighboring nodes (grains) and (c) each edge receives a value based
+on the equation (1) or (2), which determines the probability of the two
+neighboring grains being products of the same parent. Once the graph is
+constructed, the clusters are determined using the highest level of
+coarsening. Then each cluster forms a parent grain and its orientation
+is calculated by an optimization algorithm that minimizes the average
+angular deviation using the equation (1).</div>
