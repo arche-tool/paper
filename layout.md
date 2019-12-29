@@ -13,7 +13,6 @@ figures/optimized_OR_dist
 figures/image2
 figures/image3
 Figure_2_001_pole.html
-longtable_cc_toprule_Figure_3.html
 figures/graph construction
 figures/reconstruction steps
 ftbct1arr9s.html
