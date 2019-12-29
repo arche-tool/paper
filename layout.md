@@ -10,7 +10,6 @@ Identification_of_th.html
 textbf2_Reconstructi.html
 figures/optimized_OR_dist
 940ie5skqo8.html
-figures/image1
 Figure_1_Distributio.html
 figures/image2
 figures/image3
