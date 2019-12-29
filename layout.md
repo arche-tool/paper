@@ -14,6 +14,7 @@ figures/image2
 figures/image3
 Figure_2_001_pole.html
 longtable_cc_toprule_Figure_3.html
+figures/graph construction
 To_Edgar__I_copied.html
 figures/image6
 figures/image7
