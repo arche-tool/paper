@@ -17,7 +17,6 @@ longtable_cc_toprule_Figure_3.html
 figures/graph construction
 figures/reconstruction steps
 ftbct1arr9s.html
-protecthypertarget_R.html
 figures/FeNiSampleValidation
 9v2ufmqbod4.html
 figures/image9
