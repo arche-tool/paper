@@ -17,7 +17,6 @@ longtable_cc_toprule_Figure_3.html
 figures/graph construction
 figures/reconstruction steps
 ftbct1arr9s.html
-figures/image6
 protecthypertarget_R.html
 figures/image9
 Figure_6_Pointbypoin.html
