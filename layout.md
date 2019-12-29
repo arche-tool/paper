@@ -18,5 +18,7 @@ figures/graph construction
 figures/reconstruction steps
 ftbct1arr9s.html
 protecthypertarget_R.html
+figures/FeNiSampleValidation
+9v2ufmqbod4.html
 figures/image9
 Figure_6_Pointbypoin.html
