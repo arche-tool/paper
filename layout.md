@@ -18,7 +18,6 @@ figures/graph construction
 figures/reconstruction steps
 ftbct1arr9s.html
 figures/image6
-figures/image7
 protecthypertarget_R.html
 figures/image9
 Figure_6_Pointbypoin.html
