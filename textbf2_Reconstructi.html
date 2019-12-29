@@ -28,12 +28,13 @@ modeled as a graph where voxels are nodes and voxel face form edges
 between nodes. The edge weight is given by misorientation angle.</div><div>By pruning edges with higher values of misorientation values (by default
 this value is set to 5°), the grains are simply defined as the set of
 voxels forming each connected graph network. Each grain can now receive
-a unique ID number (G<sub>id</sub>).</div><div>Grain boundaries are defined as the set voxel faces where </div><h2 data-label="309425" class="ltx_title_subsection">2.1 Orientation relationship calculation</h2><div>One of the main characteristics of martensitic transformations is the
+a unique ID number (G<sub>id</sub>).</div><div>Grain boundaries are defined as the set voxel faces where
+G<sup>A</sup><sub>id</sub></div><div>2.1 Orientation relationship calculation</div><div>One of the main characteristics of martensitic transformations is the
 presence of a specific OR between parent and product phases. Although
 there are some theoretical orientation relationships proposed such as
 the Kurdjumov-Sachs (K-S) or Nishiyama-Wassermann (N-W) correspondences
 for steels, a more accurate OR can only be derived from experimental
-data. The available methods <cite class="ltx_cite raw v1">\cite{Hanne2019,Kramár2019}</cite> for OR identification depend on
+data. The available methods [22,23] for OR identification depend on
 the manual selection of parent grains, which is time consuming and in
 some cases, depending on the microstructure, impractical.</div><div>The method proposed here can derive the OR from an orientation scan in a
 fully automated manner and it is based on the misorientation between
