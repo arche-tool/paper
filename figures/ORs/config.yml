@@ -8,14 +8,12 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/ORs/ORs.csv
-    type: table
+  - path: figures/ORs/ORs.png
+    type: static
     from:
     - 1
     - 1
     to:
     - 1
     - 1
-    folder_url: "/users/1401/articles/416911/master/folder/figures/ORs"
-    treatFirstLineAsHeader: true
-    url: "/users/1401/articles/416911/master/file/figures/ORs/ORs.csv"
+    url: "/users/1401/articles/416911/master/file/figures/ORs/ORs.png"
