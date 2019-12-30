@@ -1,7 +1,6 @@
 abstract.html
 Text_in_blue_has.html
 emphtextsuperscript1.html
-emphtextsuperscript2.html
 textbf1_Introduction.html
 u5jvhnqj4t8.tex
 Identification_of_th.html
