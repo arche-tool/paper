@@ -6,7 +6,6 @@ Identification_of_th.html
 textbf2_Reconstructi.html
 figures/optimized_OR_dist
 940ie5skqo8.html
-dt2fa83vpjc.html
 figures/ORs
 Figure_2_001_pole.html
 figures/graph construction
