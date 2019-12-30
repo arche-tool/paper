@@ -5,7 +5,6 @@ u5jvhnqj4t8.tex
 Identification_of_th.html
 textbf2_Reconstructi.html
 figures/optimized_OR_dist
-figures/image3
 940ie5skqo8.html
 figures/ORs
 dt2fa83vpjc.html
