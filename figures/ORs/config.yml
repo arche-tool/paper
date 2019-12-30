@@ -17,3 +17,5 @@ grid:
     - 1
     - 1
     url: "/users/1401/articles/416911/master/file/figures/ORs/ORs.csv"
+    folder_url: "/users/1401/articles/416911/master/folder/figures/ORs"
+    treatFirstLineAsHeader: true
