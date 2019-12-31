@@ -5,8 +5,8 @@ u5jvhnqj4t8.tex
 Identification_of_th.html
 textbf2_Reconstructi.html
 d9o7v7nk7ag.html
-figures/optimized_OR_dist
 940ie5skqo8.html
+figures/optimized_OR_dist
 figures/ORs
 Figure_2_001_pole.html
 figures/graph construction
