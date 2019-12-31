@@ -11,7 +11,6 @@ r3ev4f1geqk.tex
 figures/optimized_OR_dist
 figures/ORs
 Figure_2_001_pole.html
-figures/graph construction
 figures/reconstruction steps
 ftbct1arr9s.html
 figures/FeNiSampleValidation
