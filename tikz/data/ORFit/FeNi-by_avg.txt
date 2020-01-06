@@ -1,0 +1,15 @@
+=| gamma-builder .stack-work/dist/x86_64-osx/Cabal-2.4.0.1/build/arche/arche optimum-OR -i /Volumes/Data/Edgar/UGent/PhD_Works/Parent\ Austenite/WP4/data/FeNi\ \(using\ different\ OR\ fitting\ -\ GB\ or\ AVG\)/FeNi-HB-afterQ.ang -a -m 7 -v -o ~/Documents/paper/FeNi-OR_fit-by_avg-m7 "(1,1,2,90)"
+[ANG] Using square grid.
+[ANG] Loaded numbers of points: 303601
+====================== Calculated ======================
+Error: FitError {avgError = 3.5 deg, devError = 1.1 deg, maxError = 6.1 deg}
+OR: [189,187,378] 89.2 deg
+Direct deviation from KS: 0.8 deg
+Deviation from (111) <-> (110): 0.8 deg
+Deviation from [110] <-> [111]: 0.8 deg
+====================== OR1 ======================
+Error: FitError {avgError = 3.6 deg, devError = 1.0 deg, maxError = 5.0 deg}
+OR: [171,171,341] 90.0 deg
+Direct deviation from KS: 0.0 deg
+Deviation from (111) <-> (110): 0.0 deg
+Deviation from [110] <-> [111]: 0.0 deg
