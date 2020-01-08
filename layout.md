@@ -13,6 +13,8 @@ b4e6omaau28.html
 figures/optimized_OR_dist
 figures/ORs
 Figure_2_001_pole.html
+figures/ORFittingGBs
+jrcp01p15e.html
 figures/reconstruction steps
 ftbct1arr9s.html
 figures/FeNiSampleValidation
