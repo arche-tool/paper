@@ -1,0 +1,1 @@
+.stack-work/dist/x86_64-osx/Cabal-2.4.0.1/build/arche/arche reconstruction -i /Volumes/Data/Edgar/UGent/PhD_Works/Parent\ Austenite/WP4/data/FeNi\ \(using\ different\ OR\ fitting\ -\ GB\ or\ AVG\)/FeNi-HB-afterQ.ang -m 7 -o ~/Documents/paper/FeNi-reconstruction-mcl --or "(2360,2145,4779,90.6)" -n 10
