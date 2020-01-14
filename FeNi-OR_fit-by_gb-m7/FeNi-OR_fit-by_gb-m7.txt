@@ -37,3 +37,9 @@ OR: [12480,1066,2583] 46.0 deg
 Direct deviation from KS: 5.3 deg
 Deviation from (111) <-> (110): 0.0 deg
 Deviation from [110] <-> [111]: 5.3 deg
+====================== Calculated-By-Avg ======================
+Error: FitError {avgError = 3.6 deg, devError = 1.0 deg, maxError = 6.2 deg}
+OR: [374,385,765] 90.0 deg
+Direct deviation from KS: 0.8 deg
+Deviation from (111) <-> (110): 0.7 deg
+Deviation from [110] <-> [111]: 0.3 deg
