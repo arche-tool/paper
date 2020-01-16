@@ -1,0 +1,45 @@
+=| gamma-builder .stack-work/dist/x86_64-osx/Cabal-2.4.0.1/build/arche/arche optimum-OR -i /Volumes/Data/Edgar/UGent/PhD_Works/Parent\ Austenite/WP4/data/FeNi\ \(using\ different\ OR\ fitting\ -\ GB\ or\ AVG\)/FeNi-HB-afterQ.ang -m 7 -v -o ~/Documents/paper/FeNi-OR_fit-by_gb-m7 "(1,0,0,45.00)" "(968,178,178,42.85)" "(973,189,133,44.23)" "(8,2,98,45.98)" "(976,83,201,45.98)"
+[ANG] Using square grid.
+[ANG] Loaded numbers of points: 303601
+====================== Calculated ======================
+Error: FitError {avgError = 2.1 deg, devError = 1.4 deg, maxError = 9.4 deg}
+OR: [2556,2343,5192] 90.6 deg
+Direct deviation from KS: 3.1 deg
+Deviation from (111) <-> (110): 0.6 deg
+Deviation from [110] <-> [111]: 3.1 deg
+====================== Bain ======================
+Error: FitError {avgError = 14.7 deg, devError = 3.1 deg, maxError = 25.8 deg}
+OR: [1,0,0] 45.0 deg
+Direct deviation from KS: 11.1 deg
+Deviation from (111) <-> (110): 9.7 deg
+Deviation from [110] <-> [111]: 9.7 deg
+====================== K-S ======================
+Error: FitError {avgError = 3.6 deg, devError = 1.0 deg, maxError = 5.0 deg}
+OR: [168,31,31] 42.9 deg
+Direct deviation from KS: 0.0 deg
+Deviation from (111) <-> (110): 0.0 deg
+Deviation from [110] <-> [111]: 0.0 deg
+====================== G-T ======================
+Error: FitError {avgError = 4.4 deg, devError = 1.3 deg, maxError = 7.3 deg}
+OR: [6475,1260,888] 44.2 deg
+Direct deviation from KS: 2.4 deg
+Deviation from (111) <-> (110): 2.4 deg
+Deviation from [110] <-> [111]: 0.0 deg
+====================== Pitsch ======================
+Error: FitError {avgError = 8.8 deg, devError = 3.1 deg, maxError = 18.6 deg}
+OR: [846,222,10387] 46.0 deg
+Direct deviation from KS: 7.4 deg
+Deviation from (111) <-> (110): 6.8 deg
+Deviation from [110] <-> [111]: 6.0 deg
+====================== N-W ======================
+Error: FitError {avgError = 4.2 deg, devError = 1.9 deg, maxError = 11.1 deg}
+OR: [12480,1066,2583] 46.0 deg
+Direct deviation from KS: 5.3 deg
+Deviation from (111) <-> (110): 0.0 deg
+Deviation from [110] <-> [111]: 5.3 deg
+====================== Calculated-By-Avg ======================
+Error: FitError {avgError = 3.6 deg, devError = 1.0 deg, maxError = 6.2 deg}
+OR: [374,385,765] 90.0 deg
+Direct deviation from KS: 0.8 deg
+Deviation from (111) <-> (110): 0.7 deg
+Deviation from [110] <-> [111]: 0.3 deg

@@ -1,0 +1,65 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13}
+\usepgfplotslibrary{groupplots}
+
+\usetikzlibrary{fit}
+\makeatletter
+\tikzset{
+  fitting node/.style={
+    inner sep=0pt,
+    fill=none,
+    draw=none,
+    reset transform,
+    fit={(\pgf@pathminx,\pgf@pathminy) (\pgf@pathmaxx,\pgf@pathmaxy)}
+  },
+  reset transform/.code={\pgftransformreset}
+}
+\makeatother
+
+\def \plotdata[#1] {
+    \addplot[blue, fill=blue, fill opacity=0.2, bar width=#1] table [x index=0, y index=4, col sep=tab] {../data/ORFit/FeNi-OR-Hist.csv};
+    \addplot[red, fill=red, fill opacity=0.2, bar width=#1] table [x index=0, y index=6, col sep=tab] {../data/ORFit/FeNi-OR-Hist.csv};
+}
+
+\begin{document}
+\begin{tikzpicture}[pin distance=12mm]
+
+\begin{groupplot}[
+  group style={
+    group size=2 by 1,
+  },
+  width=0.7\textwidth,
+  height=0.55\textwidth,
+  ybar, enlargelimits=0.1,
+  ylabel={frequency},
+  xlabel={angular deviation (deg)},
+  legend style={legend columns=-1},
+  yticklabel style={/pgf/number format/fixed},
+  scaled y ticks = false,
+]
+
+%% ================================= 1:1 ==============================
+\nextgroupplot[ymin=0, ymax=0.14]
+\plotdata[2pt]
+\draw[black,dashed,thick] (axis cs:15,-0.0007) rectangle (axis cs:27,0.007) node[fitting node] (zoom) {};
+
+\node[inner sep=0pt] (opt) at (axis cs:2.0, 0.135) {};
+\node[inner sep=0pt] (ks) at (axis cs:4.725, 0.135) {};
+\draw[|->,>=stealth,thick] (ks.east) -- (opt.west) node[midway,right=5pt] {\begin{tabular}{c}noise\\ reduction\end{tabular}};
+
+\legend{KS,optimized}
+%% ================================= 1:2 ==============================
+\nextgroupplot[xmin=16, ylabel={}, yticklabels={}, width = 6cm]
+\plotdata[2pt]
+
+\node[inner sep=0pt] (ks) at (axis cs:22.55, 0.0038) {};
+\node[inner sep=0pt] (opt) at (axis cs:25.8, 0.0038) {};
+\draw[|->,>=stealth,thick] (ks.east) -- (opt.west) node[midway,above=5pt] {\begin{tabular}{c}signal\\ improvement\end{tabular}};
+
+\end{groupplot}
+\draw[thick, black, dashed, ->, shorten >=2pt, shorten <=2pt] (zoom.north east) -- (group c2r1.north west);
+\draw[thick, black, dashed, ->, shorten >=2pt, shorten <=2pt] (zoom.south east) -- (group c2r1.south west);
+
+\end{tikzpicture}
+\end{document}

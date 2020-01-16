@@ -1,0 +1,39 @@
+=| gamma-builder .stack-work/dist/x86_64-osx/Cabal-2.4.0.1/build/arche/arche optimum-OR -i /Volumes/Data/Edgar/UGent/PhD_Works/Parent\ Austenite/WP4/data/FeNi\ \(using\ different\ OR\ fitting\ -\ GB\ or\ AVG\)/FeNi-HB-afterQ.ang -m 7 -v -o ~/Documents/paper/FeNi-OR_fit-by_gb-m7 "(1,0,0,45)" "(97,18,18,42.85)" "(98,8,20,45.98)" "(8,20,98,45.98)" "(98,20,8,45.98)"
+[ANG] Using square grid.
+[ANG] Loaded numbers of points: 303601
+====================== Calculated ======================
+Error: FitError {avgError = 2.2 deg, devError = 1.5 deg, maxError = 9.5 deg}
+OR: [3213,2926,6528] 90.6 deg
+Direct deviation from KS: 3.2 deg
+Deviation from (111) <-> (110): 0.6 deg
+Deviation from [110] <-> [111]: 3.2 deg
+====================== Bain ======================
+Error: FitError {avgError = 14.8 deg, devError = 3.0 deg, maxError = 25.5 deg}
+OR: [1,0,0] 45.0 deg
+Direct deviation from KS: 11.1 deg
+Deviation from (111) <-> (110): 9.7 deg
+Deviation from [110] <-> [111]: 9.7 deg
+====================== KS ======================
+Error: FitError {avgError = 3.6 deg, devError = 1.0 deg, maxError = 5.1 deg}
+OR: [406,75,75] 42.9 deg
+Direct deviation from KS: 0.1 deg
+Deviation from (111) <-> (110): 0.1 deg
+Deviation from [110] <-> [111]: 0.1 deg
+====================== NW ======================
+Error: FitError {avgError = 3.9 deg, devError = 1.9 deg, maxError = 12.9 deg}
+OR: [1025,84,210] 46.0 deg
+Direct deviation from KS: 5.2 deg
+Deviation from (111) <-> (110): 0.1 deg
+Deviation from [110] <-> [111]: 5.2 deg
+====================== GT ======================
+Error: FitError {avgError = 3.9 deg, devError = 1.9 deg, maxError = 12.9 deg}
+OR: [84,210,1025] 46.0 deg
+Direct deviation from KS: 5.2 deg
+Deviation from (111) <-> (110): 0.1 deg
+Deviation from [110] <-> [111]: 5.2 deg
+====================== Pitsch ======================
+Error: FitError {avgError = 6.8 deg, devError = 1.8 deg, maxError = 11.0 deg}
+OR: [1025,210,84] 46.0 deg
+Direct deviation from KS: 5.2 deg
+Deviation from (111) <-> (110): 5.2 deg
+Deviation from [110] <-> [111]: 0.1 deg
