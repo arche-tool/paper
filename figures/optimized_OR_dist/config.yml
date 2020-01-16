@@ -8,7 +8,7 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/optimized_OR_dist/ORFittingHist.png
+  - path: figures/optimized_OR_dist/FeNi-ORFittingHist.png
     type: static
     from:
     - 1
@@ -17,4 +17,4 @@ grid:
     - 1
     - 1
     folder_url: "/users/1401/articles/416911/master/folder/figures/optimized_OR_dist"
-    url: "/users/1401/articles/416911/master/file/figures/optimized_OR_dist/ORFittingHist.png"
+    url: "/users/1401/articles/416911/master/file/figures/optimized_OR_dist/FeNi-ORFittingHist.png"
