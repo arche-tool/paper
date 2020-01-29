@@ -16,6 +16,9 @@ figures/ORFittingGBs
 figures/ORs
 Figure_2_001_pole.html
 94bltvhrmek.html
+1a29l0nlobc.html
+q8cddomppe8.html
+k4fmv4e99og.html
 figures/reconstruction steps
 ftbct1arr9s.html
 figures/FeNiSampleValidation
