@@ -17,6 +17,8 @@ figures/ORs
 Figure_2_001_pole.html
 figures/reconstruction steps
 ftbct1arr9s.html
+b74uh5eh908.html
+68bca041s5g.html
 figures/FeNiSampleValidation
 figures/image9
 Figure_6_Pointbypoin.html
