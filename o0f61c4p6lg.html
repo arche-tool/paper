@@ -1,0 +1,11 @@
+<div>Despite the proposed  theoretical ORs such as
+K-S or N-W correspondences
+for steels, a more accurate OR can only be derived from experimental
+data.</div><div>The available methods&nbsp;for OR identification&nbsp;<cite class="ltx_cite raw v1">\cite{germain2007determination,miyamoto2009accurate}</cite>  depend on
+the manual selection of parent grains, which is time consuming and in
+some cases, depending on the microstructure, impractical.</div><div>The proposed algorithm has an optional stage where it can derive the OR from the pre-processed microstructure graph in a
+fully automated manner based only on the misorientation between
+neighbouring grains. When analyzing a microstructure of transformed sample, one can observe two kinds of grain boundaries. The first one is between a parent phase and product
+phase grains, when still a residual fraction of the parent phase is present in
+the transformed microstructure. And the second one is between product
+phase grains.</div><div>On both kinds there is another level of differentiation but not observable directly on the microstructure graph (this is a task for the next stage, the reconstruction algorithm).  The first kind the boundary could be between a retained parent grain and a product grain produce by the same parent grain, in such a case the misorientation is expected to match&nbsp;<span class="math ltx_Math v1">\(T^{\alpha'\leftrightarrow\gamma}\)</span> after taking symmetry in consideration, as described in Equation&nbsp;<span class="au-ref raw v1">\ref{eq:1}</span>. If the product grain is being produced from a different parent then no assumption can be made about its misorientation. A similar differentiation also occurs in the second kind boundary, if both product grains are coming from different parents, as in the previous kind, nothing is assumed. But if both product grains were derived from the same parent then they also hold an orientation relationship. But in this case, it is given by the double product of the OR between parent and product grains&nbsp;<span class="math ltx_Math v1">\(T_m^{\alpha'\leftrightarrow\gamma}T_n^{\alpha'\leftrightarrow\gamma}\)</span> as described on Equation&nbsp;<span class="au-ref raw v1">\ref{eq:2}</span>, after taking symmetry in consideration.</div><div></div>
