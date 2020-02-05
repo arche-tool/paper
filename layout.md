@@ -21,7 +21,6 @@ figures/fig 6
 oam9sqjms1o.html
 fr0rgq3vbv.html
 d8oskjaqev.html
-figures/fig8
 hut758fkb.html
 figures/FeNiSampleValidation
 figures/image9
