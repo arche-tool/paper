@@ -19,7 +19,6 @@ figures/reconstruction steps
 ftbct1arr9s.html
 figures/fig 6
 oam9sqjms1o.html
-jnrc6ilpv5s.html
 fr0rgq3vbv.html
 d8oskjaqev.html
 figures/FeNiSampleValidation
