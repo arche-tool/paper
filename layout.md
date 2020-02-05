@@ -22,6 +22,8 @@ oam9sqjms1o.html
 fr0rgq3vbv.html
 d8oskjaqev.html
 hut758fkb.html
+figures/Fig8
+gj83c9een5g.html
 figures/FeNiSampleValidation
 figures/image9
 Figure_6_Pointbypoin.html
