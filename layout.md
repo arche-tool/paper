@@ -17,7 +17,6 @@ figures/ORs
 Figure_2_001_pole.html
 figures/reconstruction steps
 ftbct1arr9s.html
-sihk04md2jg.html
 figures/fig 6
 oam9sqjms1o.html
 jnrc6ilpv5s.html
