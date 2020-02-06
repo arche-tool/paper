@@ -8,7 +8,7 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/fig 6/Fig 6.png
+  - path: figures/fig 6/Figure6.png
     type: static
     from:
     - 1
@@ -17,4 +17,4 @@ grid:
     - 1
     - 1
     folder_url: "/users/1401/articles/416911/master/folder/figures/fig 6"
-    url: "/users/1401/articles/416911/master/file/figures/fig%206/Fig%206.png"
+    url: "/users/1401/articles/416911/master/file/figures/fig%206/Figure6.png"
