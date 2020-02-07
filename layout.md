@@ -25,3 +25,5 @@ figures/Fig8
 hut758fkb.html
 figures/Figure9
 Figure_6_Pointbypoin.html
+figures/Figure10
+pbrcdigicgg.html
