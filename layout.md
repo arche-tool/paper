@@ -24,5 +24,4 @@ gj83c9een5g.html
 figures/Fig8
 hut758fkb.html
 figures/Figure9
-figures/image9
 Figure_6_Pointbypoin.html
