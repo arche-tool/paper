@@ -8,7 +8,7 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/image9/miso_dist.png
+  - path: figures/image9/Figure10.png
     type: static
     from:
     - 1
@@ -17,4 +17,4 @@ grid:
     - 1
     - 1
     folder_url: "/users/1401/articles/416911/master/folder/figures/image9"
-    url: "/users/1401/articles/416911/master/file/figures/image9/miso_dist.png"
+    url: "/users/1401/articles/416911/master/file/figures/image9/Figure10.png"
