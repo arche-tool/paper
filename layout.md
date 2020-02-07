@@ -23,7 +23,6 @@ figures/FeNiSampleValidation
 gj83c9een5g.html
 figures/Fig8
 hut758fkb.html
-f8qtrkto22g.html
 figures/Figure9
 Figure_6_Pointbypoin.html
 figures/Figure10
