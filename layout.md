@@ -15,6 +15,8 @@ figures/ORFittingGBs
 22jig141v.html
 figures/ORs
 Figure_2_001_pole.html
+6cd1hijf468.html
+ibc6ld1b1d.html
 figures/reconstruction steps
 ftbct1arr9s.html
 figures/fig 6
