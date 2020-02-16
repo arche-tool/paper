@@ -3,6 +3,7 @@
 \usepackage{alphalph}
 \usepgfplotslibrary{groupplots}
 
+%%%%%%%%%%%% auto set title %%%%%%%%%%%%
 \makeatletter
 \pgfplotsset{
     auto title/.style={
@@ -14,15 +15,27 @@
 
 \begin{document}
 
+%%%%%%%%%%% theta positions %%%%%%%%%%% 
+\pgfmathsetmacro\gbva{1.7}
+\pgfmathsetmacro\gbvb{4.0}
+\pgfmathsetmacro\gbvc{7.3}
+
+\pgfmathsetmacro\grva{3.0}
+\pgfmathsetmacro\grvb{6.6}
+
+\pgfmathsetmacro\ggva{3.4}
+
 \pgfplotstableread[col sep=comma]{
-1.0
-3.0
-3.4
+1.7
 4.0
-6.3
-7.0
+7.3
+3.0
+6.6
+3.4
 }\datatable
 \pgfplotstablegetrowsof{\datatable}
+
+%%%%%%%%%%% gaussian functions %%%%%%%%%%% 
 \pgfmathsetmacro{\R}{\pgfplotsretval-1}
 \pgfmathsetmacro\mysum{0}
 \pgfmathsetmacro\mysigma{0.5}
@@ -34,8 +47,10 @@
   \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
 }
 
+%%%%%%%%%%% style definition %%%%%%%%%%% 
 \tikzset{small dot/.style={fill=black, circle, scale=0.5, black, align=center}}
 \pgfplotsset{every axis title/.append style={at={(1.0,0.5)}}}
+
 
 \begin{tikzpicture}
 \begin{groupplot}[
@@ -58,37 +73,37 @@
 
 %% ================================= 1:1 ==============================
 \nextgroupplot[]
-  \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(1.0, 0.5)} \closedcycle;
-  \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(4.0, 0.5)};
-  \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(6.3, 0.5)};
-  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 1\end{tabular}}] at (axis cs:1.0, 0.8) {};
-  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 6\end{tabular}}] at (axis cs:4.0, 0.8) {};
-  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 4\end{tabular}}] at (axis cs:6.3, 0.8) {};
+  \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(\gbva, 0.5)} \closedcycle;
+  \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(\gbvb, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(\gbvc, 0.5)};
+  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 1\end{tabular}}] at (axis cs:\gbva, 0.8) {};
+  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 6\end{tabular}}] at (axis cs:\gbvb, 0.8) {};
+  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 4\end{tabular}}] at (axis cs:\gbvc, 0.8) {};
 
 %% ================================= 1:2 ==============================
 \nextgroupplot[]
-  \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(1.0, 0.5)} \closedcycle;
-  \addplot[very thick, fill opacity=0.2, fill=red,     red] {gauss(3.0, 0.5)};
-  \addplot[very thick, fill opacity=0.2, fill=green, green] {gauss(3.4, 0.5)};
-  \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(4.0, 0.5)};
-  \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(6.3, 0.5)};
-  \addplot[very thick, fill opacity=0.2, fill=red,     red] {gauss(7.0, 0.5)};
-  \node[small dot, pin={135:\begin{tabular}{c} $g_{B}$ \\ variant 9\end{tabular}}] at (axis cs:3.0, 0.8) {};
-  \node[small dot, pin={45:\begin{tabular}{c} $g_{C}$ \\ variant 5\end{tabular}}] at (axis cs:3.4, 0.8) {};
-  \node[small dot, pin={45:\begin{tabular}{c} $g_{B}$ \\ variant 2\end{tabular}}] at (axis cs:7.0, 0.8) {};
+  \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(\gbva, 0.5)} \closedcycle;
+  \addplot[very thick, fill opacity=0.2, fill=red,     red] {gauss(\grva, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=green, green] {gauss(\ggva, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(\gbvb, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(\gbvc, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=red,     red] {gauss(\grvb, 0.5)};
+  \node[small dot, pin={135:\begin{tabular}{c} $g_{B}$ \\ variant 9\end{tabular}}] at (axis cs:\grva, 0.8) {};
+  \node[small dot, pin={ 45:\begin{tabular}{c} $g_{C}$ \\ variant 5\end{tabular}}] at (axis cs:\ggva, 0.8) {};
+  \node[small dot, pin={ 45:\begin{tabular}{c} $g_{B}$ \\ variant 2\end{tabular}}] at (axis cs:\grvb, 0.8) {};
 
 %% ================================= 1:3 ==============================
 \nextgroupplot[]
-  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=blue,   blue] {gauss(1.0, 0.5)} \closedcycle;
-  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=red,     red] {gauss(3.0, 0.5)};
-  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=green, green] {gauss(3.4, 0.5)};
-  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=blue,   blue] {gauss(4.0, 0.5)};
-  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=blue,   blue] {gauss(6.3, 0.5)};
-  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=red,     red] {gauss(7.0, 0.5)};
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=blue,   blue] {gauss(\gbva, 0.5)} \closedcycle;
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=red,     red] {gauss(\grva, 0.5)};
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=green, green] {gauss(\ggva, 0.5)};
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=blue,   blue] {gauss(\gbvb, 0.5)};
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=blue,   blue] {gauss(\gbvc, 0.5)};
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=red,     red] {gauss(\grvb, 0.5)};
   \addplot[black, very thick] {\mysum};
   
-  \draw[dashed, very thick](axis cs:3.4,0) -- node [] {} (axis cs:3.4,2);
-  \node[fill=black, circle, scale=0.5, black, pin={30:$odf_{mode}$}] at (axis cs:3.4, 1.77) {};
+  \draw[dashed, very thick](axis cs:\ggva,0) -- node [] {} (axis cs:\ggva,2);
+  \node[fill=black, circle, scale=0.5, black, pin={30:$odf_{mode}$}] at (axis cs:\ggva, 1.77) {};
 
 \end{groupplot} 
 \end{tikzpicture}
