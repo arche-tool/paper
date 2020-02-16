@@ -1,6 +1,7 @@
 \documentclass[crop,tikz]{standalone}
 \usepackage{pgfplots, pgfplotstable}
 \usepackage{alphalph}
+\pgfplotsset{compat=1.3}
 \usepgfplotslibrary{groupplots}
 
 %%%%%%%%%%%% auto set title %%%%%%%%%%%%
@@ -72,25 +73,31 @@
 	]
 
 %% ================================= 1:1 ==============================
-\nextgroupplot[]
+\nextgroupplot[
+  	height=0.3\textwidth,
+    ymin=0, ymax=1
+  ]
   \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(\gbva, 0.5)} \closedcycle;
   \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(\gbvb, 0.5)};
   \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(\gbvc, 0.5)};
-  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 1\end{tabular}}] at (axis cs:\gbva, 0.8) {};
-  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 6\end{tabular}}] at (axis cs:\gbvb, 0.8) {};
-  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 4\end{tabular}}] at (axis cs:\gbvc, 0.8) {};
+  \node[small dot, pin={30:\begin{tabular}{c} $g_{A}$ \\ variant 1\end{tabular}}] at (axis cs:\gbva, 0.8) {};
+  \node[small dot, pin={30:\begin{tabular}{c} $g_{A}$ \\ variant 6\end{tabular}}] at (axis cs:\gbvb, 0.8) {};
+  \node[small dot, pin={30:\begin{tabular}{c} $g_{A}$ \\ variant 4\end{tabular}}] at (axis cs:\gbvc, 0.8) {};
 
 %% ================================= 1:2 ==============================
-\nextgroupplot[]
+\nextgroupplot[
+  	height=0.3\textwidth,
+    ymin=0, ymax=1
+  ]
   \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(\gbva, 0.5)} \closedcycle;
   \addplot[very thick, fill opacity=0.2, fill=red,     red] {gauss(\grva, 0.5)};
   \addplot[very thick, fill opacity=0.2, fill=green, green] {gauss(\ggva, 0.5)};
   \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(\gbvb, 0.5)};
   \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(\gbvc, 0.5)};
   \addplot[very thick, fill opacity=0.2, fill=red,     red] {gauss(\grvb, 0.5)};
-  \node[small dot, pin={135:\begin{tabular}{c} $g_{B}$ \\ variant 9\end{tabular}}] at (axis cs:\grva, 0.8) {};
-  \node[small dot, pin={ 45:\begin{tabular}{c} $g_{C}$ \\ variant 5\end{tabular}}] at (axis cs:\ggva, 0.8) {};
-  \node[small dot, pin={ 45:\begin{tabular}{c} $g_{B}$ \\ variant 2\end{tabular}}] at (axis cs:\grvb, 0.8) {};
+  \node[small dot, pin={150:\begin{tabular}{c} $g_{B}$ \\ variant 9\end{tabular}}] at (axis cs:\grva, 0.8) {};
+  \node[small dot, pin={ 30:\begin{tabular}{c} $g_{C}$ \\ variant 5\end{tabular}}] at (axis cs:\ggva, 0.8) {};
+  \node[small dot, pin={ 30:\begin{tabular}{c} $g_{B}$ \\ variant 2\end{tabular}}] at (axis cs:\grvb, 0.8) {};
 
 %% ================================= 1:3 ==============================
 \nextgroupplot[]
