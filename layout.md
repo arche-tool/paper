@@ -17,6 +17,7 @@ figures/ORs
 Figure_2_001_pole.html
 figures/reconstruction steps
 ibc6ld1b1d.html
+figures/ODF-mode
 ftbct1arr9s.html
 figures/fig 6
 oam9sqjms1o.html
