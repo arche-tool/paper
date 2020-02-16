@@ -8,7 +8,7 @@ grid:
   rows: 1
   columns: 1
   grid_elements:
-  - path: figures/reconstruction steps/reconstruction steps.png
+  - path: figures/reconstruction steps/Reconstruction_steps.png
     type: static
     from:
     - 1
@@ -16,6 +16,6 @@ grid:
     to:
     - 1
     - 1
-    url: "/users/1401/articles/416911/master/file/figures/reconstruction%20steps/reconstruction%20steps.png"
     folder_url: "/users/1401/articles/416911/master/folder/figures/reconstruction
       steps"
+    url: "/users/1401/articles/416911/master/file/figures/reconstruction%20steps/Reconstruction_steps.png"
