@@ -1,0 +1,95 @@
+\documentclass[crop,tikz]{standalone}
+\usepackage{pgfplots, pgfplotstable}
+\usepackage{alphalph}
+\usepgfplotslibrary{groupplots}
+
+\makeatletter
+\pgfplotsset{
+    auto title/.style={
+        title=(\AlphAlph{\pgfplots@group@current@plot})
+    }
+}
+\makeatother
+
+
+\begin{document}
+
+\pgfplotstableread[col sep=comma]{
+1.0
+3.0
+3.4
+4.0
+6.3
+7.0
+}\datatable
+\pgfplotstablegetrowsof{\datatable}
+\pgfmathsetmacro{\R}{\pgfplotsretval-1}
+\pgfmathsetmacro\mysum{0}
+\pgfmathsetmacro\mysigma{0.5}
+\pgfplotsforeachungrouped \X in {0,...,\R}{
+   \pgfplotstablegetelem{\X}{0}\of{\datatable}
+   \edef\mysum{\mysum+(1/(sqrt(2*pi)*\mysigma))*exp(-(x-\pgfplotsretval)^2/(2*\mysigma*\mysigma))}
+}
+\pgfmathdeclarefunction{gauss}{2}{%
+  \pgfmathparse{1/(#2*sqrt(2*pi))*exp(-((x-#1)^2)/(2*#2^2))}%
+}
+
+\tikzset{small dot/.style={fill=black, circle, scale=0.5, black, align=center}}
+\pgfplotsset{every axis title/.append style={at={(1.0,0.5)}}}
+
+\begin{tikzpicture}
+\begin{groupplot}[
+	group style={
+		group size=1 by 3,
+		vertical sep=40pt
+  	},
+  	width=1.5\textwidth,
+  	height=0.5\textwidth,
+    no markers, domain=0:9, samples=200,
+    axis lines*=left, xlabel=$\theta$, ylabel=$odf(\theta)$,
+    every axis y label/.style={at=(current axis.above origin),anchor=south},
+    every axis x label/.style={at=(current axis.right of origin),anchor=west},
+    ytick=\empty, xtick=\empty,
+    enlargelimits=false, clip=false, axis on top,
+    grid = major,
+    ymin=0, ymax=2,
+    auto title
+	]
+
+%% ================================= 1:1 ==============================
+\nextgroupplot[]
+  \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(1.0, 0.5)} \closedcycle;
+  \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(4.0, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=blue, blue] {gauss(6.3, 0.5)};
+  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 1\end{tabular}}] at (axis cs:1.0, 0.8) {};
+  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 6\end{tabular}}] at (axis cs:4.0, 0.8) {};
+  \node[small dot, pin={45:\begin{tabular}{c} $g_{A}$ \\ variant 4\end{tabular}}] at (axis cs:6.3, 0.8) {};
+
+%% ================================= 1:2 ==============================
+\nextgroupplot[]
+  \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(1.0, 0.5)} \closedcycle;
+  \addplot[very thick, fill opacity=0.2, fill=red,     red] {gauss(3.0, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=green, green] {gauss(3.4, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(4.0, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=blue,   blue] {gauss(6.3, 0.5)};
+  \addplot[very thick, fill opacity=0.2, fill=red,     red] {gauss(7.0, 0.5)};
+  \node[small dot, pin={135:\begin{tabular}{c} $g_{B}$ \\ variant 9\end{tabular}}] at (axis cs:3.0, 0.8) {};
+  \node[small dot, pin={45:\begin{tabular}{c} $g_{C}$ \\ variant 5\end{tabular}}] at (axis cs:3.4, 0.8) {};
+  \node[small dot, pin={45:\begin{tabular}{c} $g_{B}$ \\ variant 2\end{tabular}}] at (axis cs:7.0, 0.8) {};
+
+%% ================================= 1:3 ==============================
+\nextgroupplot[]
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=blue,   blue] {gauss(1.0, 0.5)} \closedcycle;
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=red,     red] {gauss(3.0, 0.5)};
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=green, green] {gauss(3.4, 0.5)};
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=blue,   blue] {gauss(4.0, 0.5)};
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=blue,   blue] {gauss(6.3, 0.5)};
+  \addplot[thick, opacity=0.5, fill opacity=0.2, fill=red,     red] {gauss(7.0, 0.5)};
+  \addplot[black, very thick] {\mysum};
+  
+  \draw[dashed, very thick](axis cs:3.4,0) -- node [] {} (axis cs:3.4,2);
+  \node[fill=black, circle, scale=0.5, black, pin={30:$odf_{mode}$}] at (axis cs:3.4, 1.77) {};
+
+\end{groupplot} 
+\end{tikzpicture}
+\end{document}
