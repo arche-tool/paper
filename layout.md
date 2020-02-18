@@ -10,10 +10,6 @@ r3ev4f1geqk.tex
 940ie5skqo8.html
 u0h8pktbtq.tex
 b4e6omaau28.html
-figures/optimized_OR_dist
-figures/ORFittingGBs
-22jig141v.html
-figures/ORs
 Figure_2_001_pole.html
 figures/reconstruction steps
 ibc6ld1b1d.html
