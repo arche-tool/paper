@@ -20,8 +20,8 @@ ftbct1arr9s.html
 figures/fig 6
 oam9sqjms1o.html
 figures/optimized_OR_dist
-hfes5rg64rg.html
 figures/ORFittingGBs
+hfes5rg64rg.html
 nfiepf5nr4.html
 figures/FeNiSampleValidation
 gj83c9een5g.html
