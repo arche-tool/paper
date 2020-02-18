@@ -10,7 +10,6 @@ r3ev4f1geqk.tex
 940ie5skqo8.html
 u0h8pktbtq.tex
 b4e6omaau28.html
-figures/ORFittingGBs
 22jig141v.html
 figures/ORs
 Figure_2_001_pole.html
@@ -22,6 +21,7 @@ figures/fig 6
 oam9sqjms1o.html
 hfes5rg64rg.html
 figures/optimized_OR_dist
+figures/ORFittingGBs
 nfiepf5nr4.html
 figures/FeNiSampleValidation
 gj83c9een5g.html
