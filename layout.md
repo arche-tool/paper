@@ -19,8 +19,8 @@ figures/ODF-mode
 ftbct1arr9s.html
 figures/fig 6
 oam9sqjms1o.html
-hfes5rg64rg.html
 figures/optimized_OR_dist
+hfes5rg64rg.html
 figures/ORFittingGBs
 nfiepf5nr4.html
 figures/FeNiSampleValidation
