@@ -18,8 +18,8 @@
 \makeatother
 
 \def \plotdata[#1] {
-    \addplot[blue, fill=blue, fill opacity=0.2, bar width=#1] table [x index=0, y index=4, col sep=tab] {../data/ORFit/FeNi-OR-Hist.csv};
-    \addplot[red, fill=red, fill opacity=0.2, bar width=#1] table [x index=0, y index=6, col sep=tab] {../data/ORFit/FeNi-OR-Hist.csv};
+    \addplot[teal, fill=teal, fill opacity=0.2, bar width=#1] table [x index=0, y index=4, col sep=tab] {../data/ORFit/FeNi-OR-Hist.csv};
+    \addplot[olive, fill=olive, fill opacity=0.2, bar width=#1] table [x index=0, y index=6, col sep=tab] {../data/ORFit/FeNi-OR-Hist.csv};
 }
 
 \begin{document}
@@ -33,9 +33,9 @@
   height=0.55\textwidth,
   ybar, enlargelimits=0.1,
   ylabel={frequency},
-  xlabel={angular deviation (deg)},
+  xlabel={angular deviation (degrees)},
   legend style={legend columns=-1},
-  yticklabel style={/pgf/number format/fixed},
+  yticklabel style={/pgf/number format/.cd,fixed,fixed zerofill,precision=2},
   scaled y ticks = false,
 ]
 
@@ -50,7 +50,12 @@
 
 \legend{KS,optimized}
 %% ================================= 1:2 ==============================
-\nextgroupplot[xmin=16, ylabel={}, yticklabels={}, width = 6cm]
+\nextgroupplot[
+  xmin=16,
+  width = 6cm,
+  ylabel={},
+  yticklabel style={/pgf/number format/.cd,std,fixed zerofill,precision=2},
+  axis y line=right]
 \plotdata[2pt]
 
 \node[inner sep=0pt] (ks) at (axis cs:22.55, 0.0038) {};

@@ -1,38 +1,28 @@
 \documentclass[crop,tikz]{standalone}
 \usepackage{pgfplots}
+\usetikzlibrary{matrix,positioning}
 \usepackage{tikz}
-\pgfplotsset{compat=1.13}
+\pgfplotsset{compat=newest}
 \usepgfplotslibrary{groupplots}
 
 \begin{document}
 
 \tikzset{small dot/.style={fill=black, circle, scale=0.5}}
 
-\begin{tikzpicture}
+\begin{tikzpicture}[thick, scale=0.9]
 \begin{groupplot}[
 	group style={
+		group name=plot,
 		group size=2 by 1,
-		horizontal sep=40pt
+		horizontal sep=60pt
   	},
   	width=0.65\textwidth,
   	height=0.65\textwidth,
 	]
 
+\def\darkcyan{cyan!60!black}
+\def\darkgreen{green!60!black}
 %% ================================= 1:1 ==============================
-\nextgroupplot[
-	xmin=0, xmax=10, ymin=0, ymax=10,
-	ylabel={\begin{tabular}{c}angular deviation between\\close packed directions (deg)\end{tabular}},
-	xlabel={\begin{tabular}{c}angular deviation between\\close packed planes (deg)\end{tabular}}
-	]
-	\node[small dot, blue, pin={[blue]70:K-S}] at (axis cs:0, 0) {};
-	\node[small dot, red, pin={[red]0:optimized (GB)}] at (axis cs:0.6,3.1) {};
-	\node[small dot, orange, pin={[pin distance=30pt, orange]45:optimized (avg)}] at (axis cs:0.7,0.3) {};
-	
-	\node[small dot, pin=225:Bain] at (axis cs:9.7, 9.7) {};
-	\node[small dot, pin=30:N-W] at (axis cs:0.0, 5.3) {};
-	\node[small dot, pin=30:G-T] at (axis cs:2.4, 0.0) {};
-	\node[small dot, pin=90:Pitsch] at (axis cs:6.8, 6.0) {};
-
 \nextgroupplot[
 	ybar,
 	bar shift=0pt,
@@ -40,16 +30,34 @@
     nodes near coords, 
 	nodes near coords align={vertical},
     x tick label style={rotate=45,anchor=east},
-	ylabel={\begin{tabular}{c}avg. angular error (deg)\end{tabular}},
+	ylabel={\begin{tabular}{c}avg. angular error (degrees)\end{tabular}},
 	]
-	\addplot[red, fill=red, fill opacity=0.2, text opacity=1] coordinates {(optimized (GB),2.0)};
+	\addplot[olive, fill=olive, fill opacity=0.2, text opacity=1] coordinates {(optimized (GB),2.0)};
 	\addplot[orange, fill=orange, fill opacity=0.2, text opacity=1] coordinates {(optimized (avg),3.6)};
-	\addplot[blue, fill=blue, fill opacity=0.2, text opacity=1] coordinates {(K-S,3.6)};
-	\addplot[black, fill=black, fill opacity=0.2, text opacity=1] coordinates {(N-W,4.2)};
-	\addplot[black, fill=black, fill opacity=0.2, text opacity=1] coordinates {(G-T,4.4)};
-	\addplot[black, fill=black, fill opacity=0.2, text opacity=1] coordinates {(Pitsch,8.8)};
+	\addplot[teal, fill=teal, fill opacity=0.2, text opacity=1] coordinates {(K-S,3.6)};
+	\addplot[\darkgreen, fill=\darkgreen, fill opacity=0.2, text opacity=1] coordinates {(N-W,4.2)};
+	\addplot[violet, fill=violet, fill opacity=0.2, text opacity=1] coordinates {(G-T,4.4)};
+	\addplot[\darkcyan, fill=\darkcyan, fill opacity=0.2, text opacity=1] coordinates {(Pitsch,8.8)};
 	\addplot[black, fill=black, fill opacity=0.2, text opacity=1] coordinates {(Bain,14.8)};
 
+\nextgroupplot[
+	xmin=0, xmax=10, ymin=0, ymax=10,
+	ylabel={\begin{tabular}{c}angular deviation between\\close packed directions (degrees)\end{tabular}},
+	xlabel={\begin{tabular}{c}angular deviation between\\close packed planes (degrees)\end{tabular}}
+	]
+	\node[small dot, teal, pin={[teal]70:K-S}] at (axis cs:0, 0) {};
+	\node[small dot, olive, pin={[olive]0:optimized (GB)}] at (axis cs:0.6,3.1) {};
+	\node[small dot, orange, pin={[pin distance=30pt, orange]45:optimized (avg)}] at (axis cs:0.7,0.3) {};
+	
+	\node[small dot, black, pin={[black]225:Bain}] at (axis cs:9.7, 9.7) {};
+	\node[small dot, \darkgreen, pin={[\darkgreen]30:N-W}] at (axis cs:0.0, 5.3) {};
+	\node[small dot, violet, pin={[violet]30:G-T}] at (axis cs:2.4, 0.0) {};
+	\node[small dot, \darkcyan, pin={[\darkcyan]90:Pitsch}] at (axis cs:6.8, 6.0) {};
+
+
 \end{groupplot}
+\node[above = 0.5cm of plot c1r1.north] {(a)};
+\node[above = 0.5cm of plot c2r1.north] {(b)};
+
 \end{tikzpicture}
 \end{document}
