@@ -1,0 +1,45 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13}
+\usepgfplotslibrary{groupplots}
+
+\begin{document}
+\begin{tikzpicture}
+
+\begin{groupplot}[
+  group style={
+    group size=1 by 2,
+    vertical sep=0pt,
+    x descriptions at=edge bottom
+  },
+  width=1.0\textwidth,
+  height=0.50\textwidth,
+  ylabel style={align=center},
+  xlabel={Number of iteraction steps}
+  ]
+
+\nextgroupplot[
+  ylabel={Average angular\\deviation (degrees)},
+]
+\addplot[
+  scatter,
+  error bars/.cd,
+  y dir=both,
+  y explicit,
+  error bar style={color=mapped color}
+  ] table [x index=0, y index=1, y error index=2, col sep=tab] {../data/StepConvergence.csv};
+
+\nextgroupplot[
+  ymin=0,
+  ylabel={Angular deviation\\reduction (\%)},
+  xtick={1,2,3,4,5,6,7,8,9,10,11,12},
+  tick align=outside,
+  ymode=log
+]
+\addplot[smooth, blue] table [x index=0, y index=3, col sep=tab] {../data/StepConvergence.csv};
+\addplot [red, dashed, no markers, thick] coordinates {(1,1.0) (12,1.0)};
+\node[above, red]  at (axis cs:11.0, 1.0) {\scriptsize stop criteria};
+
+\end{groupplot}
+\end{tikzpicture}
+\end{document}
