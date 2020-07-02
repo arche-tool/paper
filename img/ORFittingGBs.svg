@@ -13,9 +13,9 @@
    viewBox="0 0 126.22655 99.999999"
    version="1.1"
    id="svg8"
-   inkscape:version="1.0beta2 (2b71d25, 2019-12-03)"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
    sodipodi:docname="ORFittingGBs.svg"
-   inkscape:export-filename="/Users/edgar/Documents/paper/tikz/img/ORFittingGBs.png"
+   inkscape:export-filename="/data/Edgar/paper/tikz/img/ORFittingGBs.png"
    inkscape:export-xdpi="150"
    inkscape:export-ydpi="150">
   <defs
@@ -27,19 +27,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.2673542"
-     inkscape:cx="238.53836"
+     inkscape:zoom="2.9765625"
+     inkscape:cx="249.63518"
      inkscape:cy="188.97638"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:snap-global="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="687"
+     inkscape:window-width="2560"
+     inkscape:window-height="1384"
      inkscape:window-x="0"
-     inkscape:window-y="23"
-     inkscape:window-maximized="0"
+     inkscape:window-y="20"
+     inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -89,15 +89,15 @@
          y="110.59763"
          style="stroke-width:0.264583" /></text>
     <rect
-       style="fill:#ffffff;fill-opacity:0.692982;stroke:#000000;stroke-width:0.176508;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.176508;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1047"
-       width="13.490229"
-       height="39.823494"
-       x="115.8513"
-       y="106.44207"
+       width="15.265658"
+       height="34.496494"
+       x="112.8432"
+       y="111.49158"
        ry="2.3433967" />
     <image
-       y="112.08768"
+       y="112.08767"
        x="117.54232"
        width="19.39439"
        height="33.304302"
@@ -106,15 +106,16 @@
        id="image1043" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;line-height:1.25;font-family:'monofur for Powerline';-inkscape-font-specification:'monofur for Powerline Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0737973"
-       x="116.31052"
-       y="110.84068"
-       id="text1055"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;line-height:1.25;font-family:'DejaVu Math TeX Gyre';-inkscape-font-specification:'DejaVu Math TeX Gyre, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0737973"
+       x="-141.08969"
+       y="116.76847"
+       id="text1055"
+       transform="rotate(-90)"><tspan
          sodipodi:role="line"
          id="tspan1053"
-         x="116.31052"
-         y="110.84068"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52778px;font-family:'monofur for Powerline';-inkscape-font-specification:'monofur for Powerline Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.0737973">𝚫g(deg)</tspan></text>
+         x="-141.08969"
+         y="116.76847"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.88056px;font-family:'DejaVu Math TeX Gyre';-inkscape-font-specification:'DejaVu Math TeX Gyre, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.0737973">𝚫g(degrees)</tspan></text>
     <rect
        ry="2.2816291"
        y="49.642879"
@@ -122,20 +123,20 @@
        height="6.6578698"
        width="27.851946"
        id="rect1091"
-       style="fill:#ffffff;fill-opacity:0.692982;stroke:#000000;stroke-width:0.148054;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.148054;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <text
        id="text1097"
-       y="54.206535"
-       x="87.950493"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'monofur for Powerline';-inkscape-font-specification:'monofur for Powerline Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0737973"
+       y="54.334946"
+       x="88.168427"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'DejaVu Math TeX Gyre';-inkscape-font-specification:'DejaVu Math TeX Gyre, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0737973"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'monofur for Powerline';-inkscape-font-specification:'monofur for Powerline Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.0737973"
-         y="54.206535"
-         x="87.950493"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'DejaVu Math TeX Gyre';-inkscape-font-specification:'DejaVu Math TeX Gyre, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.0737973"
+         y="54.334946"
+         x="88.168427"
          id="tspan1095"
          sodipodi:role="line">optimized</tspan></text>
     <rect
-       style="fill:#ffffff;fill-opacity:0.692982;stroke:#000000;stroke-width:0.176508;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.176508;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1110"
        width="9.1060972"
        height="6.6293397"
@@ -144,14 +145,14 @@
        ry="2.3433967" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;line-height:1.25;font-family:'monofur for Powerline';-inkscape-font-specification:'monofur for Powerline Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0737973"
-       x="32.430016"
-       y="54.735703"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;line-height:1.25;font-family:'DejaVu Math TeX Gyre';-inkscape-font-specification:'DejaVu Math TeX Gyre, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0737973"
+       x="31.878035"
+       y="54.769573"
        id="text1114"><tspan
          sodipodi:role="line"
          id="tspan1112"
-         x="32.430016"
-         y="54.735703"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.64444px;font-family:'monofur for Powerline';-inkscape-font-specification:'monofur for Powerline Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.0737973">KS</tspan></text>
+         x="31.878035"
+         y="54.769573"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.93889px;font-family:'DejaVu Math TeX Gyre';-inkscape-font-specification:'DejaVu Math TeX Gyre, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.0737973">KS</tspan></text>
   </g>
 </svg>
