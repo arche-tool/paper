@@ -1,0 +1,45 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.13}
+\usepgfplotslibrary{groupplots}
+
+\usetikzlibrary{fit}
+\makeatletter
+\tikzset{
+  fitting node/.style={
+    inner sep=0pt,
+    fill=none,
+    draw=none,
+    reset transform,
+    fit={(\pgf@pathminx,\pgf@pathminy) (\pgf@pathmaxx,\pgf@pathmaxy)}
+  },
+  reset transform/.code={\pgftransformreset}
+}
+\makeatother
+
+\def \plotdata[#1] {
+    \addplot[blue, fill=blue, fill opacity=0.2, bar width=#1] table [x index=0, y index=1, col sep=tab] {../data/OriginalAndRecGammaDiff.csv};
+}
+
+\begin{document}
+\begin{tikzpicture}[pin distance=12mm]
+
+\begin{groupplot}[
+  group style={
+    group size=1 by 1,
+  },
+  width=1.0\textwidth,
+  height=0.50\textwidth,
+  ybar, enlargelimits=0.1,
+  ylabel={fraction (\%)},
+  xlabel={misorientation angle (degrees)},
+  legend style={legend columns=-1},
+  yticklabel style={/pgf/number format/fixed},
+  scaled y ticks = false,
+]
+
+\nextgroupplot
+\plotdata[3.5pt]
+\end{groupplot}
+\end{tikzpicture}
+\end{document}
